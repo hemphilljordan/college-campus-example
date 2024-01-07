@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik+Maps&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <div class="popup">
+    <h1>Welcome To A</h1>
+    <h1 class="title">HEMPHILL DESIGNS</h1>
+    <p>QUICK MOCK UP</p>
+  </div>
+
+  <div class="click-here" onclick="playVideo()">
+    <p>Click Here To Start This Video</p>
+  </div>
+
+  <header>
+    <div class="header-left">
+      <img src="logo.jpg" alt="">
+      <h1>City College of San Francisco</h1>
+    </div>
+    <div class="header-right">
+      <button class="red">Request Info</button>
+      <button class="gray">Schedule Visit</button>
+      <button class="red">Apply Today</button>
+      <button class="gray">Register Now</button>
+    </div>
+  </header>
+
+  <div class="next-vid">
+    <p>Multi-Use Building (MUB)</p>
+    <div class="arrow-circle">
+      <img src="right-arrow.png" alt="">
+    </div>
+  </div>
+
+  <!-- <video autoplay loop muted>
+    <source src="campus-vid.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video> -->
+
+  <video id="bgVideo" onclick="playVideo()">
+    <source src="campus-vid.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Content on top of the video -->
+  <!-- <div class="content">
+    <h1>Your Content Goes Here</h1>
+    <p>This is some text placed on top of the video background.</p>
+  </div> -->
+
+  <div class="volume-div">
+    <img src="volume-off-svgrepo-com.svg" alt="" onclick="toggleMute()" id="mute-button">
+    <img src="expand-wide-svgrepo-com.svg" alt="" onclick="toggleFullscreen()">
+  </div>
+
+  <div class="side-menu" id="hiddenDiv">
+    <div class="top-choice">
+      <img src="logo.jpg" alt="">
+      <h1>CCSF</h1>
+    </div>
+    <div class="building-choice">
+      <img src="building1.jpeg" alt="">
+      <p>Welcome to CCSF!</p>
+    </div>
+    <div class="building-choice">
+      <div class="black-cover"></div>
+      <img src="2.jpg" alt="">
+      <p>Multi-Use Building (MUB)</p>
+    </div>
+    <div class="building-choice">
+      <div class="black-cover"></div>
+      <img src="building1.jpeg" alt="">
+      <p>Smith Hall, Ram Plaza, and Student Union</p>
+    </div>
+    <div class="building-choice">
+      <div class="black-cover"></div>
+      <img src="2.jpg" alt="">
+      <p>Wellness Center</p>
+    </div>
+    <div class="building-choice">
+      <div class="black-cover"></div>
+      <img src="building1.jpeg" alt="">
+      <p>Welcome to CCSF!</p>
+    </div>
+    <div class="building-choice">
+      <div class="black-cover"></div>
+      <img src="2.jpg" alt="">
+      <p>Welcome to CCSF!</p>
+    </div>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
